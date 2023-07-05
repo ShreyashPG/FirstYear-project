@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Expense Tracker</title>
+    <link rel="icon" type="image/x-icon" href="photo1.png">
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body{
+          background-image: url(photo2.jpg);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size:100% 100%;
+      }
+  </style>
+  </head>
+  <body>
+    <h2 style="color: aliceblue";>EXPENSE TRACKER</h2>
+    <div class="container">
+      <h4 style="color: aliceblue">Your Balance</h4>
+      <h1 id="balance" style="color: aliceblue">₹0.00</h1>
+      <div class="inc-exp-container">
+        <div>
+          <h4 >Income</h4>
+          <p id="money-plus" class="money-plus">
+            +₹0.00
+          </p>
+        </div>
+        <div>
+          <h4 >Expense</h4>
+          <p id="money-minus" class="money-minus">
+            -₹0.00
+          </p>
+        </div>
+      </div>
+      
+      <br>
+        <a href="http://127.0.0.1:3000/index.html" class="button">
+          ADD NOTES
+        </a>
+
+
+        <a href="http://127.0.0.1:3004/index.html" class="button">
+          SPEND WISE
+        </a>
+
+
+      <br>
+      <h3 style="color: aliceblue">History</h3>
+      <ul id="list" class="list">
+        <!-- <li class="minus">
+          Cash <span>-₹400</span
+          ><button class="delete-btn">x</button>
+        </li> -->
+      </ul>
+      <h3 style="color: aliceblue">Add New Transaction</h3>
+      <form id="form">
+          <div class="form-control">
+              <label for="text" style="color: aliceblue">Text</label>
+              <input type="text" id="text" placeholder="Enter Text...."/>
+          </div>
+          <div class="form-control">
+              <label for="amount" style="color: aliceblue">Amount <br> (negative - expense ,positive - income )</label>
+              <input type="number" id="amount" placeholder="Enter amount..."> 
+          </div>
+          <button class="btn">All transaction</button>
+      </form>
+    </div>
+    <!-- JavaYscript Project  -->
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+

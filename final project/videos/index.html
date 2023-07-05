@@ -1,0 +1,93 @@
+<html>
+ <head>
+
+
+<title>SEEK HELP</title> 
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="a2.png">
+<style>
+    body{
+        background-image: url(photo3.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size:100% 100%;
+    }
+</style>
+
+
+
+</head>
+ <body>
+
+<div class="container">
+<h1 style="color: rgb(0, 0, 0);">BE FINANCIALLY AWARE !</h1>
+
+<div class="row">
+<div class="col">
+<div class="feature-img">
+<a href="https://www.youtube.com/watch?v=HQzoZfc3GwQ">
+<img src="media/pic2.jpg" width="100%">
+<img src="media/play.png" class="play-btn"
+oneclick="playVideo('media/vid1.mp4')">
+</a>
+</div>
+</div>
+<div class="col">
+    <div class="small-img-row">
+        <div class="small-img">
+            <img src="media/pic1.jpg">
+            <img src="media/play.png" class="play-btn" 
+            oneclick="playVideo('media/vid2.mp4')">
+
+        </div>
+        <p><a href="https://www.youtube.com/watch?v=j1p2PbfNk0c">Robert Kiyosaki: "You Will Never Be Poor Again" 
+            | START DOING THIS TODAY!!!</a></p>
+    </div>
+    <div class="small-img-row">
+        <div class="small-img">
+            <img src="media/pic3.jpg">
+            <img src="media/play.png" class="play-btn"
+            oneclick="playVideo('media/vid3.mp4')">
+
+        </div>
+        <p><a href="https://www.youtube.com/watch?v=NvkS7O7yNcQ">10 Clever Personal Finance Rules you should know.</a></p>
+    </div>
+    <div class="small-img-row">
+        <div class="small-img">
+            <img src="media/pic4.jpg">
+            <img src="media/play.png" class="play-btn"
+            oneclick="playVideo('media/vid4.mp4')" >
+
+        </div>
+        <p><a href="https://www.youtube.com/watch?v=MpADdBwXMm0">7 Tips for Money Management & Saving Money | Make a Financial Plan Wisely | By Anurag Aggarwal Hindi
+         </a></p>
+    </div>
+</div>
+</div>
+</div>
+<div class="video-player" id="videoPlayer">
+    <video width="100%" controls autoplay id="myVideo">
+        <source src="C:\Users\shrey\OneDrive\Desktop\final project\videos\media\vid1.mp4" type="video/mp4">
+    </video>
+    <img src="media/close.png" class="close-btn" onclick="stopVideo()">
+
+</div>
+
+<script>
+    var videoPlayer =document.getElementById("videoPlayer");
+    var myVideo =document.getElementById("myVideo");
+
+     function stopVideo(){
+        videoPlayer.style.display="none";
+     } 
+     
+     function playVideo(file){
+            myVideo.src=file;
+            videoPlayer.style.display="block";
+
+
+     }
+</script>
+
+
+
